@@ -35,7 +35,8 @@ function App() {
         headers: { 'Content-Type': 'multipart/form-data' },
       });
       setParsedOutline(response.data.outline);
-      setBookTitle(response.data.outline.bookTitle || 'Untitled Book');
+      console.log('Parsed outline from backend:', response.data.outline);
+      setBookTitle(response.data.outline.title || 'Untitled Book');
       setOutlineRecord(null);
       setChapterDrafts({});
       setChapterRecords({});
