@@ -221,14 +221,11 @@ function App() {
       <div className="container">
         <header>
           <h1>Book Generation Automation</h1>
-          <p>
-            A workflow-driven editor-in-the-loop book system with Supabase
-            persistence.
-          </p>
+        
         </header>
 
         <section className="card">
-          <h2>1. Input + Outline Stage</h2>
+          <h2>File Upload</h2>
           <input type="file" accept=".xlsx,.xls" onChange={handleFileChange} />
           <button onClick={uploadOutline} disabled={!outlineFile}>
             Upload Outline File
